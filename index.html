@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset  */
+        body {
+            height: 100vh;;
+            width: 100vw;
+            
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(imges1/lorenzo-fatto-offidani-de5OZMjb5ww-unsplash.jpg)no-repeat center center/cover ;
+        }
+
+        .left {
+            position: absolute;
+            top: 20px;
+            left: 55px;
+            /* border: 2px solid blue; */
+            display: inline-block;
+        }
+        .left img {
+            width: 143px;
+            /* filter: invert(100%); for changing the color of the image */
+        }
+        .left div {
+            font-size: 30px;
+            text-align: center;
+        }
+        .mid {
+            display: block;
+            margin: 20px auto;
+            width: 45%;
+            /* border: 2px solid green; */
+
+        }
+
+        .right {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            /* border: 2px solid yellow; */
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 24px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: rgb(160, 160, 160);
+            text-decoration: underline;
+        }
+        .btn{
+            font-family: 'Titillium Web', sans-serif;
+            margin: 0px 1px;
+            background-color: black;
+            color: aliceblue;
+            padding: 1px 6px;
+            border-radius: 10px;
+            border: 2px solid rgb(100, 100, 100);
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(73, 70, 70);
+        }
+        .container{
+            border: 3px solid violet;
+            margin: 134px 60px;
+            padding: 0px 0px 25px 0px;
+            width:50%;
+            display: block;
+            border-radius: 10px;;
+        }
+        .container h1 {
+         text-align: center;
+         font-size: 45px;
+        }
+        .container button{
+            display: block;
+            width: 35%;
+            margin: auto;
+        }
+        .formadd input{
+            font-family: 'Titillium Web', sans-serif;
+            text-align:center;
+            display: block;
+            border: 2px solid rgb(26, 109, 26);
+            width: 450px;
+            margin:6px auto;
+            padding: 2px;
+            font-size:15px ;
+            border-radius: 10px;
+        }
+        .formadd input:hover,
+        .formadd input:active{
+            border: 2px solid rgb(8, 240, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="imges1/log2.jpg" alt="">
+            <div>FIGHT CLUB</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Add Location</button>
+            <button class="btn">Sign Up</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Club</h1>
+        <form action="noaction.php" target="_blank">
+        <div class="formadd">
+        <input type="text" name="" placeholder="Enter Your Name">
+        </div>
+        <div class="formadd">
+        <input type="number" name="" placeholder="Enter Your Age">
+        </div>
+        <div class="formadd">
+        <input type="number" name="" placeholder="Enter Your Contact no">
+        </div>
+        <div class="formadd">
+        <input type="text" name="" placeholder="Enter Your Gender">
+        </div>
+        <div class="formadd">
+        <input type="text" name="" placeholder="Enter Your Area">
+        </div>
+        <button class="btn">Submit Here</button>
+    </form>
+    </div>
+</body>
+
+</html>
